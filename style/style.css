@@ -1,0 +1,76 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* More responsive */
+  column-gap: 15px;
+  row-gap: 30px;
+  padding: 20px;
+}
+
+.video-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail-wrapper {
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.profile {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.name,
+.views {
+  color: gray;
+  font-size: 14px;
+  margin: 1px 0;
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 8px; /* Position from the right */
+  padding: 4px 6px; /* Smaller padding */
+  border-radius: 2px; /* Slightly rounded corners */
+  font-size: 12px; /* Smaller font size */
+  font-weight: 500; /* Medium font weight */
+}

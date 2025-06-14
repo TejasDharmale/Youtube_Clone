@@ -1,0 +1,84 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 82px; /* Reverted to match compact image design */
+}
+
+/* Container for Home icon + text */
+.home {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 74px; /* Consistent height for vertical centering */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    cursor: pointer;
+    padding: 16px 0; /* Adjusted padding for perfect vertical centering */
+    transition: background-color 0.15s;
+}
+
+.home:hover {
+    background-color: #f2f2f2;
+}
+
+.home:active {
+    background-color: #e5e5e5;
+}
+
+.home img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.home_text {
+    font-size: 9px; /* Reduced font size to ensure single line within narrow width */
+    color: black;
+    padding: 0;
+    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.sidebar-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 74px; /* Consistent height for vertical centering */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    cursor: pointer;
+    padding: 16px 0; /* Adjusted padding for perfect vertical centering */
+    transition: background-color 0.15s;
+}
+
+.sidebar-link:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar-link:active {
+    background-color: #e5e5e5;
+}
+
+.sidebar-link img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div {
+    font-size: 9px; /* Reduced font size to ensure single line within narrow width */
+    color: black;
+    padding: 0;
+    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+}
